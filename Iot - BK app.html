@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link rel = "stylesheet" type = "text/css" href = "BK.css">   <!-- Link to style sheet named format.css -->
+		<script type="text/javascript" src="Javascript.js"></script> 
+        <script type="text/javascript" src="Javascript.js"></script>
+        <title>BlueKnox.com</title>
+    </head>
+     <body onload="onLoad()">
+		<!-- Content: div-tag with id = "content" -->
+		<div id = "content">
+			
+			<h1>BlueKnox</h1> <img src="logobgv2.jpg" alt="BlueKnox" width="100" height="100">
+			   
+			<ul id="bleDeviceList"> </ul>  
+			
+			<br>
+			<div id="statusDiv"> Conection Status: Disconnected</div>
+			<br>
+			<div id="statusDiv"> Locker Status: Locked</div>
+			<br>
+			<div id="bleId">DeviceId:</div>
+			<div id="debugDiv"></div>
+			
+			<input type="hidden" id="GemtInput" >
+			<br>
+			<input type="image" src="Micv2.jpg" width="150"
+			<br>
+			<div id="sendDiv"></div>
+			<br>
+			Password: <input type="password" value="1998" id="myInput">
+			<br>
+			<input type="checkbox" onclick="myFunction()">Show Password
+			<br>
+			<br>
+			<br>
+			<input type="submit" value="Submit">
+			<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+			<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+			<div id="receiveDiv"></div>
+		</div>
+    </body>
+</html>
