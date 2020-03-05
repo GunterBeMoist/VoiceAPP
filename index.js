@@ -123,16 +123,16 @@ function onError(reason)  {
 
 
 function beregn() {
-	if( myInput == "1234" )
+	var kode = document.getElementById("myInput");
+	if( kode == "1234" )
 	{ 
-		var data = stringToBytes("1");
-		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+		data('1');
 	}
 }	
 	
 
 function myFunction() {
-  var x = document.getElementById("myInput");
+  
   if (x.type === "password") {
     x.type = "text";
   } else {
