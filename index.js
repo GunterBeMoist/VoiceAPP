@@ -122,17 +122,22 @@ function onError(reason)  {
 //function close() {
 
 
-function beregn() {
-	var kode = document.getElementById("myInput");
-	if( kode == '666' )
-		
+//function beregn() {
+	//var kode = document.getElementById("myInput");
+	//if( kode == '666' )
+	//{ 
+	//Serial.println("1!!!!!!");
+		//data('1');
+	//}
+	//else data('2');
+//}	
+	function beregn() {
+	if( myInput.value == "1234" )
 	{ 
-	Serial.println("1!!!!!!");
-		data('1');
+		var data = stringToBytes("1");
+		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 	}
-	else data('2');
-}	
-	
+}
 
 function myFunction() {
   var x = document.getElementById("myInput");
