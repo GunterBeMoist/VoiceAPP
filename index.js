@@ -127,6 +127,7 @@ function beregn() {
 	if( kode == '666' )
 		
 	{ 
+	Serial.println("1!!!!!!");
 		data('1');
 	}
 	else data('2');
