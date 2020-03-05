@@ -119,6 +119,17 @@ function onError(reason)  {
 //Slut af basis kode 
 
 //Start af Voice kode 
+//function close() {
+
+
+function beregn() {
+	if( myInput == "1234" )
+	{ 
+		var data = stringToBytes("1");
+		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+	}
+}	
+	
 
 function myFunction() {
   var x = document.getElementById("myInput");

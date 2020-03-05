@@ -16,13 +16,7 @@
 		<div id = "content">
 			
 			<h1><img src="logobgv2.jpg" alt="BlueKnox" width="45" height="45"> BlueKnox <img src="logobgv2.jpg" alt="BlueKnox" width="45" height="45"> </h1> 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			   
+			<br>   
 			<ul id="bleDeviceList"> </ul>  
 			
 			<br>
@@ -35,18 +29,18 @@
 			
 			<input type="hidden" id="GemtInput" >
 			<br>
-			<input type="image" src="Micv2.jpg" width="150" >
 			<br>
-			
-			<br>
-			Password: <input type="password" value="1998" id="myInput">
+			Password: <input type="password" value="" id="myInput">
 			<br>
 			<input type="checkbox" onclick="myFunction()">Show Password
 			<br>
 			<br>
 			<div id="sendDiv"></div>
 			<br>
-			<input type="submit" value="Submit">
+			<button id="submit" onclick ="beregn()"> Submit</button> 
+			<button Id="closebutton" onClick="close()">Close</button>
+			<br>
+			<br>
 			<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
 			<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 			<div id="receiveDiv"></div>
