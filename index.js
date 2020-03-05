@@ -125,9 +125,11 @@ function onError(reason)  {
 function beregn() {
 	var kode = document.getElementById("myInput");
 	if( kode == "1234" )
+		
 	{ 
 		data('1');
 	}
+	else data('2');
 }	
 	
 
