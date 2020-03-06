@@ -116,21 +116,6 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
-//Slut af basis kode 
-
-//Start af Voice kode 
-//function close() {
-
-
-//function beregn() {
-	//var kode = document.getElementById("myInput");
-	//if( kode == '666' )
-	//{ 
-	//Serial.println("1!!!!!!");
-		//data('1');
-	//}
-	//else data('2');
-//}	
 	function beregn() {
 	if( myInput.value == "1234" )
 	{ 
@@ -139,6 +124,13 @@ function onError(reason)  {
 	}
 }
 
+function close(){
+	if( myInput.value != "1234" )
+	{ 
+		var data = stringToBytes("2");
+		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+	}
+}
 function myFunction() {
   var x = document.getElementById("myInput");
   if (x.type === "password") {
