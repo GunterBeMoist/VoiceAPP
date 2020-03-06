@@ -101,7 +101,7 @@ function sendData() { // send data to Arduino
 }
 	
 function onSend(){
-	document.getElementById("sendDiv").innerHTML = "Sent: " + GemtInput.value + "<br/>";
+	document.getElementById("sendDiv").innerHTML = " " + GemtInput.value + "<br/>";
 }
 
 
@@ -123,13 +123,10 @@ function onError(reason)  {
 		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 	}
 }
-
 function luk(){
-	if( myInput.value != "1234" )
-	{ 
-		var data = stringToBytes("2");
-		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
-	}
+	var myinput.value == "";
+	var data = stringToBytes("2");
+	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 function myFunction() {
   var x = document.getElementById("myInput");
