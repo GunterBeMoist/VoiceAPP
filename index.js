@@ -123,10 +123,14 @@ function onError(reason)  {
 		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 	}
 }
+
 function luk(){
-	var myinput.value == "";
-	var data = stringToBytes("2");
-	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+	var myinput.value == "close";
+	if( myInput.value != "1234" )
+	{ 
+		var data = stringToBytes("2");
+		ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+	}
 }
 function myFunction() {
   var x = document.getElementById("myInput");
