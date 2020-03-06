@@ -125,7 +125,7 @@ function onError(reason)  {
 }
 
 function luk(){
-	document.getElementById("myInput").reset();
+	myInput.value ="";
 	if( myInput.value != "1234" )
 	{ 
 		var data = stringToBytes("2");
